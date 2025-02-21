@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DS4200 Visualization</h1>
+    <h3>A subtitle</h3>
+    <button id="plot">View This Plot!</button>
+    <script>
+        const clickButton = document.getElementById("plot");
+        clickButton.addEventListener("click", function(){
+            window.location.href = "test.html"
+        });
+    </script>
+
+    <p id="main">My name is Sasha DiVall</p>
+    <p class="date">Today is Monday, February 10, 2025.</p>
+    This text is outside the paragarph tag, and it looks normal. But since there is no tag, it is hard to detect this line.
+    <p>
+        <b>This text is bolded.</b>
+        <i>This text is italic.</i>
+        <u>This text is underlined.</u>
+    </p>
+
+    <a href="https://calendar.google.com/calendar/u/0/r/week">My Google Calendar</a>
+
+    <p>My ToDo List: </p>
+    <ol class="date">
+        <li>Go to C++ On Zoom</li>
+        <li>Go to the Gym</li>
+        <li>Meet with my DS4200 Group</li>
+
+    </ol>
+
+    <img src="https://www.teddybeargoldendoodles.com/wp-content/smush-webp/2021/11/StandardDog.png.webp" alt="puppy" width=500>
+
+</body>
+</html>
