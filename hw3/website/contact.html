@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="header">Sasha DiVall</h1>
+        <h2 class="header">Welcome to my website!</h2>
+        <h3 class="header">Connect with Me!</h3>
+        <h5 class="header">
+            <button id="back_to_home">Back To Home</button>
+            <script>
+                const backButton = document.getElementById("back_to_home");
+                backButton.addEventListener('click', function () {
+                    window.location.href = "index.html";
+                });
+            </script>
+        </h5>
+        <div style="float: left; width: 30%; box-sizing: border-box; padding-left: 350px; padding-top: 125px">
+            <a href="https://www.linkedin.com/in/sashadivall">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/LinkedIn_2021.svg/2880px-LinkedIn_2021.svg.png" alt="linkedin" width=300>
+            </a>
+        </div>
+        <div style="float: left; width: 30%; box-sizing: border-box; padding-left: 450px; padding-right: 50px">
+            <a href="https://github.com/sashadivall">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1920px-GitHub_Invertocat_Logo.svg.png" alt="'github" width=300>
+
+            </a>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasha DiVall</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="header">
+    <h1>Sasha DiVall</h1>
+    <h2>Welcome to my website!</h2>
+    <h5>
+        <button id="contact">Connect with me!</button>
+        <script>
+            const connectButton = document.getElementById("contact");
+            connectButton.addEventListener('click', function () {
+                window.location.href = "contact.html";
+            });
+        </script>
+    </h5>
+    <div style="float: right; width: 30%; box-sizing: border-box; padding-right: 20px">
+        <img src="me.jpeg" alt="sasha" width="400">
+    </div>
+    <div style="float: left; width: 60%; box-sizing: border-box; padding-left: 20px">
+        <p class="description">
+            Hello! I am a third year Data Science major at Northeastern University, expected to graduate in 2026.
+            Ever since I was a kid, I loved math. This led me to pursue data science in college. I had never coded
+            before starting at Northeastern, but after taking the introductory courses, I fell in love with it. Data 
+            science combines my two passions - math and coding - in a way that makes me feel I can make a positive
+            impact on the world.
+            At my first co-op, I learned a lot about AI and how it can be used in industry. I did my co-op at Bentley Systems, 
+            a company that makes software for engineers, on the Applied AI team in the Civil Engineering department. I had the 
+            opportunity to work on a brand new application, <a href="https://www.bentley.com/software/opensite-plus/#features">OpenSite+</a>, 
+            a revolutionary, AI-driven site design software. I worked with the chatbot team, desiging a large language model to assist
+            civil engineers with their project design.
+        </p>
+        <button id="second_page">Learn More About Me</button>
+        <script>
+            const clickButton = document.getElementById("second_page");
+            clickButton.addEventListener("click", function() {
+                window.location.href = "more.html"
+            });
+        </script>
+    </div>
+    
+</body>
+</html>

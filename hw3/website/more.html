@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="header">Sasha DiVall</h1>
+    <h2 class="header">Welcome to my website!</h2>
+    <h5 class="header">
+        <button id="contact">Connect with me!</button>
+        <script>
+            const connectButton = document.getElementById("contact");
+            connectButton.addEventListener('click', function () {
+                window.location.href = "contact.html";
+            });
+        </script>
+        <button id="first_page">Back to Home</button>
+        <script>
+            const clickButton = document.getElementById("first_page");
+            clickButton.addEventListener("click", function() {
+                window.location.href = "index.html";
+            });
+        </script>
+    </h5>
+    <h6 class="header">My CV</h6>
+    <div style="float: left; width: 30%; box-sizing: border-box; padding-left: 20px">
+        <p class="bolded-text"><b>My Skills</b></p>
+        <ul>
+            <li>Programming Skills
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>TypeScript</li>
+                </ul>
+            </li>
+            <li>Technologies and Libraries
+                <ul>
+                    <li>Azure DevOps</li>
+                    <li>PyTorch</li>
+                    <li>SciKit Learn</li>
+                </ul>
+            </li>
+            <li>Concepts
+                <ul>
+                    <li>RAG-Based LLMs</li>
+                    <li>Convolutional Neural Networks</li>
+                    <li>Data Analysis</li>
+                </ul>
+            </li>
+        </ul>
+        <img src="chateau.jpeg" alt="chateau" width="400px">
+        <div style="clear: both;"></div>
+        <b style="padding-top:10px; padding-bottom: 100px; display: block;">
+            <i>Le Chateau Frontenac, Quebec City, QC.</i>
+            Taken on my trip to Quebec City with Bentley Systems.
+        </b>
+        
+    </div>
+    <div style="float: left; width: 30%; box-sizing: border-box; padding-left: 20px">
+        <p class="bolded-text"><b>Experience</b></p>
+        <ul>
+            <li>Applied AI Co-op, Bentley Systems
+                <ul>
+                    <li><i>July 2024 - Present</i></li>
+                </ul>
+            </li>
+            <li>Teaching Assistant, Khoury College of Computer Sciences
+                <ul>
+                    <li><i>Jan 2023 - Jun 2024</i></li>
+                    <li>Lead TA for CS2500, Fundamentals of Computer Science I</li>
+                </ul>
+            </li>
+            <li>Server, Corinthian Yacht Club
+                <ul>
+                    <li><i>Apr 2022 - Aug 2024</i></li>
+                </ul>
+            </li>
+        </ul>
+        <img style="padding-left:30px; padding-top:150px"src="qc.jpeg" alt="quebeccity" width="400px">
+        <b style="padding-left:30px; padding-top:10px; padding-bottom: 100px; display: block;">
+            <i>Plains of Abraham, Quebec City, QC.</i>
+            The OpenSite+ team visiting the Plains of Abraham.
+        </b>
+        </div>
+        <div style="float: left; width: 30%; box-sizing: border-box; padding-left: 20px">
+            <p class="bolded-text"><b>Research</b></p>
+            <ul>
+                <li>An Analysis Into the AI Curricula of Boston Universities and Colleges
+                    <ul>
+                        <li><i>Jan 2025 - Present</i></li>
+                        <li>Uses LLM technologies to comparitively evaluate the points of emphasis
+                            of Introductory AI courses offered at the undergraduate level across
+                            10 colleges and universities in Boston, MA.
+                        </li>
+                        <li>
+                            To be presented at <a href="https://undergraduate.northeastern.edu/research/rise-2025/overview/">RISE2025</a>.
+                        </li>
+                    </ul>
+                </li>
+                <li>Rural vs. Urban Stroke Mortality
+                    <ul>
+                        <li><i>Jan 2023 - Sept 2024</i></li>
+                        <li>Investigated the statistical significance of differences in stroke mortality
+                            between 2018-2021 across rural and urban counties in the United States.
+                        </li>
+                        <li>Presented at <a href="https://undergraduate.northeastern.edu/research/news/rise_2023_highlights/">RISE2023</a>, 
+                        <a href="http://news.northeastern.edu/2024/04/12/rise-expo-2024/">RISE2024</a> and <a href="https://community.geosociety.org/gsa2024/home">GSA2024</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <img style="padding-left: 60px; padding-top:37px"src="rise2024.jpeg" alt="rise" width="400px">
+            <b style="padding-left: 60px; padding-top:10px; padding-bottom: 100px; display: block;">
+                <i>RISE2024, Matthews Arena</i>
+                My partner and I presenting our poster at RISE2024, April 2024.
+            </b>
+            </div>
+</body>
