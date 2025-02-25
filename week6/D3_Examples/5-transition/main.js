@@ -80,3 +80,16 @@ let bar = svg
       )
       .attr('fill', 'steelblue');
 
+// change the color of the bar when you mouse over it
+bar.on('mouseover', function() {
+  d3.select(this)
+  .transition()
+  .style('fill', 'firebrick')
+  // .delay(200) // delay the color change
+  // .duration(1000)
+})
+bar.on('mouseout', function() {
+  d3.select(this)
+  .transition()
+  .style('fill', 'steelBlue')
+})

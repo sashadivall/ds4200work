@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Python in HTML</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+</head>
+<body>
+
+    <pre><code class="python">print("Hello World!")</code></pre>
+
+    <button onclick="runPython()">Run Code</button>
+    <pre id="output"></pre>
+
+    <script>
+        async function runPython() {
+            let pyodide = await loadPyodide();
+            let code = `print("Hello World!")`;
+            try {
+                            pyodide.runPython(`
+            import sys
+            from io import StringIO
+            sys.stdout = StringIO()
+            `);
+                            await pyodide.runPythonAsync(code);
+                            let output = pyodide.runPython('sys.stdout.getvalue()');
+                            document.getElementById("output").textContent = output;
+                        } catch (error) {
+                            document.getElementById("output").textContent = "Error: " + error;
+            }
+        }
+    </script>
+
+</body>
+</html>
